@@ -77,9 +77,16 @@ public:
 			}
 			cout << endl;
 		}
-		
+		else {
+			//jika FRONT > REAR, ir=terasi dari FRONT hingga akhir array
+			while (FRONT <= max - 1) {
+				cout << queue_array[FRONT] << "...";
+				FRONT++;
+			}
+			FRONT = 0;
+
 			
-		
+		}
 	}
 };
 
